@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#07040f">
+  <title>COSMORAT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="game" aria-label="COSMORAT"></canvas>
+
+  <div id="rotate">
+    <div class="icon">&#x21bb;</div>
+    <p>Gira tu iPad<br>para jugar</p>
+  </div>
+  <div id="loading">CARGANDO...</div>
+
+  <!-- 1. Configuración (frases, nombres, colores, dificultad) -->
+  <script src="js/config.js"></script>
+  <!-- 2. Motor del juego -->
+  <script src="js/engine.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/sprites.js"></script>
+  <script src="js/fondos.js"></script>
+  <!-- 3. Escenas -->
+  <script src="js/scenes/inicio.js"></script>
+  <script src="js/scenes/captura.js"></script>
+  <script src="js/scenes/nivel1.js"></script>
+  <script src="js/scenes/recompensa.js"></script>
+  <script src="js/scenes/nivel2.js"></script>
+  <script src="js/scenes/nivel3.js"></script>
+  <script src="js/scenes/regreso.js"></script>
+  <script src="js/scenes/final.js"></script>
+  <script src="js/scenes/postcreditos.js"></script>
+  <!-- 4. Arranque -->
+  <script src="js/main.js"></script>
+</body>
+</html>
